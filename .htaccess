@@ -1,0 +1,8 @@
+Options -MultiViews
+RewriteEngine on
+
+RewriteCond %{REQUEST_URI} !\.(gif|jpe?g|png|css|js)$ [NC]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,NS,L]
