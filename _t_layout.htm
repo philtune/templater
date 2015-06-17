@@ -1,0 +1,20 @@
+<% VARS = {
+	"sitename": "My Site",
+	"template": "_t_base.htm",
+	"stylesheets": ["css/style.css"],
+	"bottom_scripts": ["js/scripts.js"]
+} %>
+
+<% @body =%>
+<header><%= @header %></header>
+<main><%= @main %></main>
+<footer><%= @footer %></footer>
+<% end; %>
+
+<% @header =%>
+this is the header
+<% end; %>
+
+<% @footer =%>
+this is the footer
+<% end; %>
